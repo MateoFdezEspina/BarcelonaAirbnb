@@ -44,7 +44,7 @@ class PredictedAccuracy:
             ]
         )
 
-    def plot_scatter(self, save_fig=False, dim=[10,10], root_name="generic_figure"):
+    def plot_scatter(self, save_fig=False, dim=[10,10], root_name="generic_figure", modelname='linear model'):
         plt.close()
         plt.figure(figsize=(dim[0], dim[1]))
         y_max0 = self.y_series.max()
@@ -66,7 +66,7 @@ class PredictedAccuracy:
         plt.xlabel("Predicted value")
         plt.ylabel("Real value")
         plt.title(
-            str(self.y_series.name) + "\n" + str(self.pretty_metrics()), fontsize=15
+            'Accuracy over training set by '+str(modelname)  + "\n" + str(self.pretty_metrics()), fontsize=15
         )
         plt.scatter(self.yhat_series, self.y_series)
         plt.plot([axis_min0, axis_max0], [axis_min0, axis_max0], color="c")

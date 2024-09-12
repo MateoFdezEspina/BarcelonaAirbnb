@@ -1,0 +1,35 @@
+name: urbana
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - black
+  - configparser
+  - flake8
+  - geopandas
+  - graphviz
+  - ipykernel
+  - isort
+  - lxml
+  - missingno
+  - mypy
+  - nb_black
+  - openpyxl
+  - pandana
+  - pandas-profiling[version='>=2.0']
+  - pre-commit
+  - pysal
+  - pytest
+  - pytest-cov
+  - python==3.12.1
+  - scikit-learn
+  - sphinx-automodapi
+  - sphinx[version='>=1.7']
+  - sphinx_rtd_theme
+  - sphinxcontrib-napoleon
+  - urbanaccess
+  - watermark
+  - yellowbrick
+  - pyrosm
+  - conda-tree
+  - html5lib
